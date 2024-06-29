@@ -232,7 +232,7 @@ section .title::after{
 }
 
 .about .about-content .left img {
-    max-width: 100%;
+    max-width: 10%;
     height: auto;
     border-radius: 6px;
 }

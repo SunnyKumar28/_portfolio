@@ -257,22 +257,32 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.projects, .teams{
-    color:#fff;
+/* projects section styling */
+/* projects section styling */
+.projects, .teams {
+    color: #fff;
     background: #111;
 }
+
 .projects .title::before,
-.teams .title::before{
+.teams .title::before {
     background: #fff;
 }
+
 .projects .title::after,
-.teams .title::after{
+.teams .title::after {
     background: #111;
     content: "what i provide";
 }
-.projects .proj-content .card{
-    width: calc(33% - 20px);
+
+.projects .proj-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between cards */
+}
+
+.projects .proj-content .card {
+    flex: 1 1 calc(33.333% - 20px); /* three cards per row with some gap */
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -280,27 +290,37 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.projects .proj-content .card:hover{
+
+.projects .proj-content .card:hover {
     background: crimson;
 }
-.projects .proj-content .card .box{
+
+.projects .proj-content .card .box {
     transition: all 0.3s ease;
 }
-.projects .proj-content .card:hover .box{
+
+.projects .proj-content .card:hover .box {
     transform: scale(1.05);
 }
-.projects .proj-content .card i{
+
+.projects .proj-content .card i {
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.projects .proj-content .card:hover i{
+
+.projects .proj-content .card:hover i {
     color: #fff;
 }
-.projects .proj-content .card .text{
+
+.projects .proj-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+.projects .proj-content .card p {
+    text-align: left;
 }
 
 /* skills section styling */
